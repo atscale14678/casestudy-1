@@ -1,0 +1,46 @@
+unique_name: DimCustomer
+object_type: dimension
+label: Customer
+description: Customer Core details
+hierarchies:
+  - unique_name: Customer
+    label: Customer
+    levels:
+      - unique_name: Country
+      - unique_name: City
+      - unique_name: customertype
+      - unique_name: customername
+level_attributes:
+  - unique_name: Country
+    label: Customer Country
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customercountry
+    name_column: customercountry
+  - unique_name: City
+    label: Customer City
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customercity
+    name_column: customercity
+  - unique_name: customername
+    label: Customer Name
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customerid
+    name_column: customername
+  - unique_name: customertype
+    label: Customer Type
+    contains_unique_names: false
+    dataset: customers
+    is_unique_key: false
+    key_columns:
+      - customertype
+    name_column: customertype
+type: standard
