@@ -11,6 +11,10 @@ metrics:
     folder: Order Metrics
   - unique_name: m_orders_itemamount_sum
     folder: Order Metrics
+  - unique_name: m_orders_TaxAmount_sum
+    folder: Order Metrics
+  - unique_name: m_orders_Fulfillment Duration_sum
+    folder: Order Metrics
 relationships:
   - unique_name: orders_customerid_to_DimCustomer_customername
     from:
