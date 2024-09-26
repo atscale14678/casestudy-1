@@ -31,7 +31,6 @@ level_attributes:
     dataset: employees
     is_unique_key: false
     key_columns:
-      - employee_name
+      - employee_id
     name_column: employee_id
-  
 type: standard
